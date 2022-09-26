@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="./assets/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+     <!-- FONT AWESOME -->
+     <script src="https://kit.fontawesome.com/972b637eb2.js" crossorigin="anonymous"></script>
+     
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Devchallenges</title>
+  </head>
+  <body>
+
+    <main class="main container">
+      <h1 class="title">Checkout</h1>
+
+      <section class="preview-container">
+        <div class="preview">
+          <div class="preview-image">
+            <img src="./assets/photo1.png" alt="Vintage Backbag">
+          </div>
+          <div class="preview-content">
+            <h3 class="name">Vintage Backbag</h3>
+            <div class="price-container">
+              <span class="price-new">$54.99</span>
+              <del class="price-old">$94.99</del>
+            </div>
+            <div class="amount-container">
+              <span data-operator="-" class="decrement">-</span>
+              <span data-value="1" class="value">1</span>
+              <span data-operator="+" class="add">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview-image">
+            <img src="./assets/photo2.png" alt="Levi Shoes">
+          </div>
+          <div class="preview-content">
+            <h3 class="name">Levi Shoes</h3>
+            <div class="price-container">
+              <span class="price-new">$74.99</span>
+              <del class="price-old">$124.99</del>
+            </div>
+            <div class="amount-container">
+              <span data-operator="-" class="decrement">-</span>
+              <span data-value="1" class="value">1</span>
+              <span data-operator="+" class="add">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="info-preview">
+          <h2>Shipping</h2>
+          <span>$19</span>
+        </div>
+        <div class="info-preview">
+          <h2>Total</h2>
+          <span data-total="148.98">$148.98</span>
+        </div>
+      </section>
+
+      <form id="form-checkout">
+        <section id="contact-info">
+          <h2 class="subtitle">Contact infomation</h2>
+          <div class="input-group">
+            <label for="email">E-mail</label>
+            <div class="input">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" name="email" id="email" placeholder="Enter your email...">
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="phone">Phone</label>
+            <div class="input">
+              <i class="fa-solid fa-phone"></i>            
+              <input type="text" name="phone" id="phone" placeholder="Enter your phone...">
+            </div>
+          </div>
+        </section>
+        <section id="shipping-address">
+          <h2 class="subtitle">Shipping address</h2>
+          <div class="input-group">
+            <label for="name">Full name</label>
+            <div class="input">
+              <i class="fa-solid fa-user"></i>              <input type="text" name="name" id="name" placeholder="Your full name..">
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="address">Address</label>
+            <div class="input">
+              <i class="fa-solid fa-house"></i>              
+              <input type="text" name="address" id="address" placeholder="Your Address..">
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="city">City</label>
+            <div class="input">
+              <i class="fa-solid fa-city"></i>              
+              <input type="text" name="city" id="city" placeholder="Your city..">
+            </div>
+          </div>
+          <div class="input-group input-lg">
+            <label for="country">Country</label>
+            <div class="input">
+              <i class="fa-solid fa-earth-americas"></i> 
+              <select name="country" id="country">
+                <option disabled selected>Your country</option>
+                <option value="brazil">Brazil</option>
+                <option value="usa">USA</option>
+                <option value="india">India</option>
+                <option value="france">France</option>
+                <option value="england">England</option>
+              </select>   
+            </div>
+            <label for="postal">Postal code</label>
+            <div class="input">
+              <i class="fa-solid fa-briefcase"></i>   
+              <input type="postal" name="postal" id="postal" placeholder="Your postal code..">
+            </div>
+          </div>
+        </section>
+        <div class="checkbox">
+          <input type="checkbox" name="saveInfo" id="saveInfo">
+          <label for="saveInfo">Save this information for next time</label>
+        </div>
+        <button class="btn">Continue</button>
+      </form>
+    </main>
+
+
+    <footer class="footer">
+      created by <a href="https:/github.com/Jorge-Guedes" target="_blank">JorgeGuedes</a> - devChallenges.io
+    </footer>
+  
+  </body>
+</html>
