@@ -132,7 +132,7 @@ input, button, select {
     margin-bottom: 2.2rem;
 }
 
-.preview-container .price-container .price-new {
+.preview-container .price-container .price-current {
     font-size: clamp(1.4rem, 2.5vw, 1.6rem);
     color: var(--p);
 }
