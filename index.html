@@ -42,12 +42,12 @@
           <div class="preview-content">
             <h3 class="name">Vintage Backbag</h3>
             <div class="price-container">
-              <span class="price-new">$54.99</span>
-              <del class="price-old">$94.99</del>
+              <span class="price-current" data-price="54.99">$54.99</span>
+              <del class="price-old" data-price="94.99">$94.99</del>
             </div>
             <div class="amount-container">
               <span data-operator="-" class="decrement">-</span>
-              <span data-value="1" class="value">1</span>
+              <span data-quantity="1" class="quantity">1</span>
               <span data-operator="+" class="add">+</span>
             </div>
           </div>
@@ -59,19 +59,19 @@
           <div class="preview-content">
             <h3 class="name">Levi Shoes</h3>
             <div class="price-container">
-              <span class="price-new">$74.99</span>
-              <del class="price-old">$124.99</del>
+              <span class="price-current" data-price="74.99">$74.99</span>
+              <del class="price-old" data-price="124.99">$124.99</del>
             </div>
             <div class="amount-container">
               <span data-operator="-" class="decrement">-</span>
-              <span data-value="1" class="value">1</span>
+              <span data-quantity="1" class="quantity">1</span>
               <span data-operator="+" class="add">+</span>
             </div>
           </div>
         </div>
         <div class="info-preview">
           <h2>Shipping</h2>
-          <span>$19</span>
+          <span id="shipping" data-price="19">$19</span>
         </div>
         <div class="info-preview">
           <h2>Total</h2>
@@ -86,14 +86,14 @@
             <label for="email">E-mail</label>
             <div class="input">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" name="email" id="email" placeholder="Enter your email...">
+              <input type="email" name="email" id="email" placeholder="Enter your email..." required>
             </div>
           </div>
           <div class="input-group">
             <label for="phone">Phone</label>
             <div class="input">
               <i class="fa-solid fa-phone"></i>            
-              <input type="text" name="phone" id="phone" placeholder="Enter your phone...">
+              <input type="text" name="phone" id="phone" placeholder="Enter your phone..." required>
             </div>
           </div>
         </section>
@@ -102,21 +102,21 @@
           <div class="input-group">
             <label for="name">Full name</label>
             <div class="input">
-              <i class="fa-solid fa-user"></i>              <input type="text" name="name" id="name" placeholder="Your full name..">
+              <i class="fa-solid fa-user"></i>              <input type="text" name="name" id="name" placeholder="Your full name.." required>
             </div>
           </div>
           <div class="input-group">
             <label for="address">Address</label>
             <div class="input">
               <i class="fa-solid fa-house"></i>              
-              <input type="text" name="address" id="address" placeholder="Your Address..">
+              <input type="text" name="address" id="address" placeholder="Your Address.." required>
             </div>
           </div>
           <div class="input-group">
             <label for="city">City</label>
             <div class="input">
               <i class="fa-solid fa-city"></i>              
-              <input type="text" name="city" id="city" placeholder="Your city..">
+              <input type="text" name="city" id="city" placeholder="Your city.." required>
             </div>
           </div>
           <div class="input-group input-lg">
@@ -135,7 +135,7 @@
             <label for="postal">Postal code</label>
             <div class="input">
               <i class="fa-solid fa-briefcase"></i>   
-              <input type="postal" name="postal" id="postal" placeholder="Your postal code..">
+              <input type="postal" name="postal" id="postal" placeholder="Your postal code.." required>
             </div>
           </div>
         </section>
@@ -151,6 +151,8 @@
     <footer class="footer">
       created by <a href="https:/github.com/Jorge-Guedes" target="_blank">JorgeGuedes</a> - devChallenges.io
     </footer>
+
+    <script src="./js/script.js"></script>
   
   </body>
 </html>
